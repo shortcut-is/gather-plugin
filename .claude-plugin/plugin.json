@@ -1,0 +1,22 @@
+{
+  "name": "gather",
+  "version": "1.3.0",
+  "description": "Gather studio resource planning, team capacity forecasting, project scheduling, and weekly studio hygiene via remote OAuth 2.1 MCP.",
+  "author": {
+    "name": "Shortcut",
+    "url": "https://shortcut.is"
+  },
+  "homepage": "https://gather.shortcut.is",
+  "repository": "https://github.com/shortcut-is/gather-plugin",
+  "license": "MIT",
+  "keywords": [
+    "gather",
+    "resource-planning",
+    "scheduling",
+    "capacity",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "rules": "./rules/AGENTS.md"
+}

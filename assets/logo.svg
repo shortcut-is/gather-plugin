@@ -1,0 +1,26 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="12" y="12" width="104" height="104" rx="26" fill="url(#gather_plugin_bg)" />
+  <rect x="12.75" y="12.75" width="102.5" height="102.5" rx="25.25" stroke="#8E8D88" stroke-opacity="0.38" stroke-width="1.5" />
+  <rect x="26" y="34" width="46" height="20" rx="6" fill="url(#gather_plugin_bar_top)" />
+  <rect x="46" y="60" width="56" height="18" rx="6" fill="url(#gather_plugin_bar_mid)" />
+  <rect x="34" y="82" width="48" height="16" rx="5.5" fill="url(#gather_plugin_bar_accent)" />
+  <rect x="65" y="23" width="5" height="82" rx="2.5" fill="#FF340B" fill-opacity="0.88" />
+  <defs>
+    <linearGradient id="gather_plugin_bg" x1="64" y1="12" x2="64" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#222220" />
+      <stop offset="1" stop-color="#0E0E0D" />
+    </linearGradient>
+    <linearGradient id="gather_plugin_bar_top" x1="49" y1="34" x2="49" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#DDDCD8" />
+    </linearGradient>
+    <linearGradient id="gather_plugin_bar_mid" x1="74" y1="60" x2="74" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B6A66" />
+      <stop offset="1" stop-color="#454441" />
+    </linearGradient>
+    <linearGradient id="gather_plugin_bar_accent" x1="36" y1="82" x2="80" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCE3E3" />
+      <stop offset="1" stop-color="#FF340B" />
+    </linearGradient>
+  </defs>
+</svg>

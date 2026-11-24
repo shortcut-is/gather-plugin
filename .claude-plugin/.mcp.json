@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gather": {
+      "type": "http",
+      "url": "https://gather.shortcut.is/api/mcp"
+    }
+  }
+}
