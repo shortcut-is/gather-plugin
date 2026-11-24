@@ -1,0 +1,13 @@
+{
+  "name": "gather",
+  "version": "1.3.0",
+  "description": "Studio resource planning and capacity scheduling with Gather remote MCP (OAuth 2.1 + PKCE).",
+  "mcpServers": {
+    "gather": {
+      "httpUrl": "https://gather.shortcut.is/api/mcp",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  }
+}

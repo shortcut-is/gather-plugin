@@ -1,0 +1,42 @@
+{
+  "name": "gather",
+  "version": "1.3.0",
+  "description": "Studio resource planning and capacity scheduling with Gather remote MCP (OAuth 2.1 + PKCE).",
+  "author": {
+    "name": "Shortcut (Toma El Atajo)",
+    "email": "hola@shortcut.is",
+    "url": "https://shortcut.is"
+  },
+  "homepage": "https://gather.shortcut.is",
+  "repository": "https://github.com/shortcut-is/gather-plugin",
+  "license": "MIT",
+  "keywords": [
+    "gather",
+    "resource-planning",
+    "scheduling",
+    "capacity",
+    "studio",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Gather",
+    "shortDescription": "Studio resource planning, team capacity forecasting, and scheduling via OAuth 2.1.",
+    "longDescription": "Connect OpenAI Codex to Gather for studio capacity planning, weekly utilization audits, project and phase booking, pause/resume timeline shifting, time off, studio holidays, and sales pipeline hygiene without exposing financial rates or private notes.",
+    "developerName": "Shortcut (Toma El Atajo)",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://gather.shortcut.is",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Run a weekly studio hygiene audit using Gather's weekly-hygiene workflow",
+      "Check team capacity for a Designer next week using capacity-check",
+      "Get our current Gather workspace summary and highlight anyone overbooked"
+    ]
+  }
+}
