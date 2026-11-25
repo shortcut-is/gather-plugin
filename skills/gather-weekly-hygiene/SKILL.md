@@ -1,6 +1,6 @@
 ---
 name: gather-weekly-hygiene
-description: Weekly studio operations hygiene runbook for Gather MCP. Use when auditing ended schedules to archive, overbooked team members, unassigned role placeholders, stale sales leads, or due follow-ups.
+description: Weekly studio hygiene audit in Gather MCP for ended schedules, overbooking, placeholders, and stale leads.
 ---
 
 # Gather Weekly Studio Hygiene Runbook
@@ -25,4 +25,4 @@ Group recommendations into concise action buckets:
 - **Overbooked weeks to rebalance** (`gather_update_allocation` / `gather_create_allocation` with `dry_run: true` previews)
 - **Stale leads & due wake-ups** (`gather_log_lead_activity`, `gather_update_lead`, or `gather_convert_lead_to_project`)
 
-**Never** apply batch mutations silently. Present exact proposed changes and wait for confirmation (using `dry_run: true` and `idempotency_key` on writes).
+**Never** apply batch mutations silently. Present exact proposed changes and wait for confirmation (using `dry_run: true` and `idempotency_key` on writes). Use `gather_pause_project`/`gather_resume_project` for real timeline-shifting pauses, and note Gather normalizes completed/closed projects to `ARCHIVED` and omits financials and private time-off notes.

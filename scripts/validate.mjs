@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const EXPECTED_VERSION = "1.3.0";
+const EXPECTED_VERSION = "1.4.0";
 
 const errors = [];
 
@@ -82,7 +82,6 @@ if (claudeManifest) {
   checkRelativeTarget(".claude-plugin/plugin.json", claudeManifest.icon);
   checkRelativeTarget(".claude-plugin/plugin.json", claudeManifest.mcpServers);
   checkRelativeTarget(".claude-plugin/plugin.json", claudeManifest.skills, true);
-  checkRelativeTarget(".claude-plugin/plugin.json", claudeManifest.rules);
 }
 if (codexOfficial) {
   checkRelativeTarget(".codex-plugin/plugin.json", codexOfficial.skills, true);
@@ -94,9 +93,6 @@ if (codexCompat) {
   checkRelativeTarget("codex/plugin.json", codexCompat.logo);
   for (const s of codexCompat.skills ?? []) {
     checkRelativeTarget("codex/plugin.json", s);
-  }
-  for (const r of codexCompat.rules ?? []) {
-    checkRelativeTarget("codex/plugin.json", r);
   }
 }
 if (claudeMarketplace?.plugins?.[0]?.source) {
@@ -148,7 +144,6 @@ for (const skillRel of ["skills/gather-resourcing/SKILL.md", "skills/gather-week
 }
 
 assert(existsSync(path.join(ROOT, "SECURITY.md")), "Missing SECURITY.md");
-assert(existsSync(path.join(ROOT, "rules/AGENTS.md")), "Missing rules/AGENTS.md");
 
 if (errors.length > 0) {
   console.error("Plugin validation failed:");
@@ -158,4 +153,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log("All 9 manifests, relative assets/paths, SVG dimensions, SECURITY.md, rules, and SKILL.md frontmatters validated (v" + EXPECTED_VERSION + ").");
+console.log("All 9 manifests, relative assets/paths, SVG dimensions, SECURITY.md, and SKILL.md frontmatters validated (v" + EXPECTED_VERSION + ").");
