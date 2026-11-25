@@ -1,6 +1,6 @@
 ---
 name: gather-resourcing
-description: Studio resourcing and capacity scheduling workflow for Gather MCP. Use when staffing a project, checking bench availability, resolving overbooking, logging time off or studio holidays, or shifting project timelines.
+description: Studio resourcing, capacity forecasting, and safe Gather MCP write workflows (dry_run and idempotency_key).
 ---
 
 # Gather Studio Resourcing Workflow
@@ -28,3 +28,5 @@ Use this playbook for staffing, capacity forecasting, and timeline adjustments i
 - Review any `overbooked` warnings (`>100%` weekly utilization) or schedule shifts with the user before re-running without `dry_run`.
 - Include a stable `idempotency_key` on retryable creation mutations so network retries do not duplicate bookings or projects within a 24-hour window.
 - For placeholder staffing gaps before hiring, create allocations with `placeholder_role` and backfill once assigned.
+- Use `gather_pause_project` and `gather_resume_project` for real pauses so open allocations and phases shift across working days cleanly; Gather normalizes completed/closed projects to `ARCHIVED` (`ACTIVE`, `TENTATIVE`, `PAUSED`, `ARCHIVED`).
+- Boundary: Gather MCP omits financials (rates, margins, revenue, cost) and private time-off notes; never extrapolate or fabricate financial figures.

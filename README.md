@@ -4,10 +4,10 @@ Cross-platform plugin bundle connecting **Antigravity (AGY)**, **Claude Code**, 
 
 ## Features
 
-- **31 Studio Planning Tools (`v1.3.0`)**: Workspace summary, weekly schedule & utilization, capacity search, projects & phases, real pause/resume timeline shifting, allocations & placeholder roles, time off, custom studio holidays, and sales pipeline leads.
+- **31 Studio Planning Tools (`v1.4.0`)**: Workspace summary, weekly schedule & utilization, capacity search, projects & phases, real pause/resume timeline shifting, allocations & placeholder roles, time off, custom studio holidays, and sales pipeline leads.
 - **Native MCP Prompts**: `weekly-hygiene`, `capacity-check`, and `staff-project`.
 - **Interactive SEP-1865 MCP App (`ui://gather/schedule-preview.html`)**: Renders inline studio utilization cards and weekly schedule heatmaps in supporting hosts.
-- **Bundled Guardrails & Skills**: `rules/AGENTS.md`, `gather-resourcing`, and `gather-weekly-hygiene`.
+- **On-Demand Skills & Self-Describing MCP Guardrails**: `gather-resourcing` and `gather-weekly-hygiene` (operational guardrails live in MCP `instructions`, typed tool schemas, and skills rather than always-on global rules).
 - **OAuth 2.1 + PKCE (`S256`) & Dynamic Client Registration**: Automatic browser sign-in with workspace studio selector and live Gather role permission enforcement (`VIEWER` read-only, `SCHEDULER` resourcing/projects, `ADMIN` full incl. Pipeline).
 
 ---

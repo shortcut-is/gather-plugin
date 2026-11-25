@@ -11,7 +11,7 @@
       "name": "gather",
       "displayName": "Gather",
       "description": "Gather studio resource planning, team capacity forecasting, project scheduling, and weekly studio hygiene via remote OAuth 2.1 MCP.",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "category": "productivity",
       "author": {
         "name": "Shortcut (Toma El Atajo)",
